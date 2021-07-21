@@ -1,0 +1,191 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+li:hover {
+cursor: pointer;
+text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* body */
+
+body {
+  height: 100vh;
+  overflow: hidden;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Hero */
+
+.hero {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.hero .form-container form {
+  position: relative;
+  
+
+}
+.hero .form-container form input {
+  font-size: 19px;
+  padding: 16px;
+  width: 650px;
+  border: 1px solid #c0b5b5;
+  border-radius: 30px;
+  outline: none;
+}
+.hero .form-container form input:hover {
+  box-shadow: 0 2px 2px #aaa8a8;
+}
+.hero .form-container form label.search  {
+position:absolute;
+left: 10px;
+top: 14px; 
+}
+.hero .form-container form label.mic{
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+.hero .form-container form label.search i {
+  color: rgb(110, 107, 107);
+}
+.hero .form-container form label.mic i {
+  color: rgb(110, 107, 107);
+}
+
+/* Buttons */
+
+.hero .buttons {
+  margin-top: 30px;
+
+}
+.hero .buttons button {
+  font-size: 17px;
+  background-color: rgb(236, 235, 235);
+  padding: 12px 65px;
+  border-radius: 7px;
+  border: 1px solid #bebdbd;
+  margin: 0 5px;
+}
+.hero .buttons button:hover {
+   cursor: pointer;
+   border: 1px solid #c7c7c7;
+   box-shadow:0 2px 4px #0e0d0d;
+}
+
+
+
+/* Header */
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 5px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  
+}
+.header ul li {
+  padding: 10px 10px;
+  justify-content: space-evenly;
+}
+.header ul img {
+  border-radius: 50%;
+}
+.header .circles {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.header .circles .circle {
+  background-color: #4e4e4e;
+  border-radius:50% ;
+  padding: 2.9px;
+  margin: 1px;
+}
+.header .circles:hover {
+  background-color: rgb(228, 225, 225);
+  border-radius: 50%;
+  width: 30px;
+  padding:3px  ;
+}
+
+/* Footer */
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #eee;
+  padding: 10px 0px;
+}
+footer h3 {
+  color: #222121;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(170, 165, 165);
+  padding: 0 20px 10px;
+}
+.footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-links ul {
+  display: flex;
+  padding: 10px 0;
+}
+.footer .footer-links ul li {
+  margin: 0 10px;
+font-size: 16px;
+color: #535353;
+}
+@media (min-width:500px){
+.hero .form-container form input {
+  width: 400px;
+  }
+}
+@media (min-width:640px){
+  .hero .form-container form input {
+    width: 500px;
+  }
+}
+@media (min-width:768px){
+  .hero .form-container form input {
+    width: 600px;
+  }
+  .hero img {
+    width :100%;
+}
+.footer .footer-links {
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (min-width:1280px){
+  .footer .footer-links{
+  justify-content: space-between;
+  padding:0 30px ;
+  }
+}
